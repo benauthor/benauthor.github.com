@@ -1,4 +1,12 @@
-<!DOCTYPE html>
-<a href="https://github.com/benauthor/">
-    <img src="./images/janky-tree.jpg" />
-</a>
+---
+title: software thought
+layout: page
+---
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
