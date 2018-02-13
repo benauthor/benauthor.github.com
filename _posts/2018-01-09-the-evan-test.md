@@ -3,11 +3,11 @@ title: The {{ your_name }} test
 ---
 # The \{\{ your_name \}\} test
 
-Here's the Joel test. It's not new. You've probably seen it before.
+Bet you've heard of the Joel test. It's not new.
 It's a set of criteria written by
 [Joel Spolsky](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/)
-quite a few years ago. He suggested this small set of questions to
-quickly evaluate the health of a software organization:
+quite a few years ago. He proposeed a set of questions for
+quickly evaluating the health of a software organization:
 
     1.  Do you use source control?
     2.  Can you make a build in one step?
@@ -22,60 +22,63 @@ quickly evaluate the health of a software organization:
     11. Do new candidates write code during their interview?
     12. Do you do hallway usability testing?
 
-This is still a useful list. But as a student (by participation) of
-software organizations, observing success and failures of those I've
-had the chance to be part of, I've gathered a few more questions of my
-own. In the spirit of the Joel test, they are phrased in the binary,
-and "Yes" is the right answer. These are leading indicators of
-successful technical organizations, according to my opinion and
-subjective experience. They have evolved over time, but here's the
-Evan test as it stands today:
+Nearly 20 years on, this is still a useful list, but I'm not sure it
+covers all the ground I'm interested in covering. As a member of
+software organizations, observing successes and failures over a few
+years, I've gathered a few more questions of my own. In the spirit of
+the Joel test, they are phrased in the binary, and "Yes" is the right
+answer. These are leading indicators of successful technical
+organizations, according to my opinion and subjective experience. They
+have evolved over time, but here's my test as it stands today:
 
 
 - **Do you have 'pushbutton' deploy and rollback of your software?**
 
-  An extension of 'builds in one step'. If you can't automate it,
-  you're wasting a lot of time every deploy, and your time to recovery
-  when things go wrong is going to be high.
+  A natural extension of 'builds in one step', this indicates seriousness about
+  tooling and automation. If you can't automate it, you're wasting a
+  lot of time every deploy, and your time to recovery when things go
+  wrong is going to be high.
 
 - **Do your products have explicit service level objectives?**
 
-  Aspiring to 100% uptime makes everybody feel like a failure, because
-  it's not possible -- not to mention overengineering is
-  expensive. On the other hand, avoiding goals or standards altogether makes you a
+  Indicates mature thinking around tradeoffs at the organizational
+  level. Aspiring to 100% uptime makes everybody feel like a failure,
+  because it's almost never practical. On the other hand, avoiding
+  goals altogether makes you a
   slob. [Reliability is just a feature](https://landing.google.com/sre/book/chapters/embracing-risk.html),
   but it's an important one, so you should have thought about it.
 
 - **Do you restrict write access in the production environment?**
 
-  With great power comes great responsibility... and the temptation to
-  cowboy-fix-it 'just this once'. And apathy on eat-your-veggies work
-  like building QA/staging infra. And poor migration discipline. And
-  concerns over private user data. And so on and so forth. Almost
-  nobody should need, want, or have sudo access in production, or
-  write privileges on your databases. Any routine tasks requiring
-  SSH to prod machines is a smell. This isn't about gatekeeping, it's
-  about not letting ourselves eat candy for breakfast.
+  With great power comes great responsibility... and the temptation
+  to cowboy-fix-it 'just this once'. And apathy on eat-your-veggies
+  work like building QA/staging infra. And poor migration
+  discipline. And concerns over private user data. And so on and so
+  forth. Almost nobody should need, want, or have sudo access in
+  production, or write privileges on your databases. Any routine tasks
+  requiring SSH to prod machines is a smell. This isn't about
+  gatekeeping, it's about not letting ourselves eat candy for
+  breakfast.
 
 - **Are your application logs durable, centralized, and searchable?**
 
-  [Cattle, not pets](http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/).
+  Your infra is [cattle, not pets](http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/).
   And see above on production access. There are several great
   solutions out there, use one.
 
 - **Does your QA team think of themselves as toolbuilders and
   consultants to the dev team?**
 
-  There may always be some rote QA work, just like there may always be
-  some tedious sysadmin work, but if the staff responsible for QA think
-  of their work in terms of checklists and mouse clicks, something is
-  wrong: this stuff never scales well, and is low-hanging fruit for
-  automation.
+  There will always be some rote QA work in the world, just like there
+  will always be some tedious sysadmin work, but if the staff
+  responsible for QA think of their work in terms of checklists and
+  mouse clicks, something is wrong: this stuff never scales well, and
+  is low-hanging fruit for automation.
 
 - **Do you maintain open source projects?**
 
   I want to know if there is both time and cultural support to think
-  'big-picture' about the software you write, find good
+  big picture about the software you write, find good
   generalizations and good abstractions, and avoid reinventing the
   wheel.
 
