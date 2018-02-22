@@ -6,7 +6,7 @@ title: The {{ your_name }} test
 Bet you've heard of the Joel test. It's not new.
 It's a set of criteria written by
 [Joel Spolsky](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/)
-quite a few years ago. He proposeed a set of questions for
+quite a while back. He proposed a set of questions for
 quickly evaluating the health of a software organization:
 
     1.  Do you use source control?
@@ -28,11 +28,12 @@ software organizations, observing successes and failures over a few
 years, I've gathered a few more questions of my own. In the spirit of
 the Joel test, they are phrased in the binary, and "Yes" is the right
 answer. These are leading indicators of successful technical
-organizations, according to my opinion and subjective experience. They
-have evolved over time, but here's my test as it stands today:
+organizations, according to my opinion and subjective experience. My
+thoughts have of course evolved over time, but here's my test as
+it stands today:
 
 
-- **Do you have 'pushbutton' deploy and rollback of your software?**
+- **Do you have 'pushbutton' deploy and rollback?**
 
   A natural extension of 'builds in one step', this indicates seriousness about
   tooling and automation. If you can't automate it, you're wasting a
@@ -50,15 +51,14 @@ have evolved over time, but here's my test as it stands today:
 
 - **Do you restrict write access in the production environment?**
 
-  With great power comes great responsibility... and the temptation
-  to cowboy-fix-it 'just this once'. And apathy on eat-your-veggies
-  work like building QA/staging infra. And poor migration
-  discipline. And concerns over private user data. And so on and so
-  forth. Almost nobody should need, want, or have sudo access in
-  production, or write privileges on your databases. Any routine tasks
-  requiring SSH to prod machines is a smell. This isn't about
-  gatekeeping, it's about not letting ourselves eat candy for
-  breakfast.
+  With great power comes great responsibility... and the temptation to
+  cowboy-fix-it 'just this once'. And apathy on eat-your-veggies work
+  like building QA/staging infra. And poor migration discipline. And
+  concerns over private user data. And so on and so forth. Almost
+  nobody should need, want, or have sudo access in production, or
+  write privileges on your databases. Any routine task requiring SSH
+  to prod is a smell. This isn't about gatekeeping, it's about not
+  letting ourselves eat candy for breakfast.
 
 - **Are your application logs durable, centralized, and searchable?**
 

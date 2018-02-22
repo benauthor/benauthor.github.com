@@ -8,7 +8,9 @@ Code review can be a fantastic learning experience, an exercise in
 collaboration, and a net benefit for a software organization. Code
 review can also be frustrating, an outlet for small-scale tyranny, hot
 air, or bikeshedding. Here are some thoughts about how to skew towards
-the former rather than the latter.
+the former rather than the latter. I can't claim to be a paragon of
+virtue here... consider this a list of aspirations more than
+prescriptions.
 
 - Tone matters. Even constructive criticism can sting if presented in
   an overly curt manner. Consider using words like 'consider'. Be
@@ -66,4 +68,6 @@ a mentorship or hierarchic relationship actually exists between the
 participants. And when executed at its best, code review can become a
 collective knowledge-sharing exercise that improves the tangible
 result and simultaneously opens a window for discussion in the realms
-of fact and aesthetics.
+of fact and aesthetics. I have benefited personally from the process
+throughout my career, and as I find myself more often on the reviewer
+side, I am trying to pass on the favor.
