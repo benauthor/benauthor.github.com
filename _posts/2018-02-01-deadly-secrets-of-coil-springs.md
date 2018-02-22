@@ -80,7 +80,7 @@ with that pickle fork you didn't use or whatever you've got on hand.
 
 10. Put jack under the wishbone and carefully raise until you're aligned
 well enough to reconnect the ball joint. Don't forget to put the bump
-stock on ($%!@#).
+stop on ($%!@#).
 
 11. Reconnect sway bar.
 
